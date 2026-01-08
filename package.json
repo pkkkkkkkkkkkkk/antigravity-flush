@@ -25,11 +25,11 @@
   "icon": "images/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pawelkatarzynski/antigravity-flush"
+    "url": "https://github.com/pkkkkkkkkkkkkk/antigravity-flush.git"
   },
-  "homepage": "https://github.com/pawelkatarzynski/antigravity-flush#readme",
+  "homepage": "https://github.com/pkkkkkkkkkkkkk/antigravity-flush#readme",
   "bugs": {
-    "url": "https://github.com/pawelkatarzynski/antigravity-flush/issues"
+    "url": "https://github.com/pkkkkkkkkkkkkk/antigravity-flush/issues"
   },
   "activationEvents": [
     "*"
