@@ -26,16 +26,27 @@ This extension lets you quickly flush the context and start fresh, resolving the
 
 ## Installation
 
-### From VSIX (Local)
+### From VS Code Marketplace
+
+**Direct link:** [Antigravity Flush on Marketplace](https://marketplace.visualstudio.com/items?itemName=pkkkkkkkkkkkkk.antigravity-flush)
+
+**Search by ID in VS Code:**
+```
+@id:pkkkkkkkkkkkkk.antigravity-flush
+```
+
+**Command line install (always latest version):**
+```bash
+code --install-extension pkkkkkkkkkkkkk.antigravity-flush
+```
+
+### From VSIX (Local Build)
 ```bash
 cd antigravity-flush
 npm install
 npm run package
-code --install-extension antigravity-flush-1.0.0.vsix
+code --install-extension antigravity-flush-*.vsix
 ```
-
-### From Marketplace
-Search for "Antigravity Flush" in the VSCode Extensions panel.
 
 ## Usage
 
