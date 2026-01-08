@@ -1,0 +1,70 @@
+{
+  "name": "antigravity-flush",
+  "displayName": "Antigravity Flush",
+  "description": "Fix Opus model crashes in Antigravity IDE by clearing context to prevent token limit truncation errors",
+  "version": "1.1.0",
+  "author": {
+    "name": "Paweł Katarzyński"
+  },
+  "license": "CC-BY-NC-4.0",
+  "publisher": "antigravity-helper",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "antigravity",
+    "flush",
+    "context",
+    "clear",
+    "google",
+    "ai"
+  ],
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pawelkatarzynski/antigravity-flush"
+  },
+  "homepage": "https://github.com/pawelkatarzynski/antigravity-flush#readme",
+  "bugs": {
+    "url": "https://github.com/pawelkatarzynski/antigravity-flush/issues"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "antigravity-flush.flush",
+        "title": "Flush Antigravity Context",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "antigravity-flush.flushCurrent",
+        "title": "Flush Current Conversation Only",
+        "icon": "$(close)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "antigravity-flush.flush",
+        "key": "ctrl+shift+alt+f",
+        "mac": "cmd+shift+alt+f"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node ./test/runTest.js",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "eslint": "^8.0.0",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
